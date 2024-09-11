@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>Dual Position Attention Time-Frequency Network for Binaural Audio Synthesis</title>
+  <link rel="icon" type="image/x-icon" href="static/images/logo.png">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+
+  <!-- <style>
+    body {
+        background-image: url('static/images/222.webp');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+  </style> -->
+
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">Dual Position Attention Time-Frequency Network for Binaural Audio Synthesis</h1>
+                  <div class="is-size-5 publication-authors">
+                          <!-- Paper authors -->
+                    <span class="author-block" style="color: #06a7e7;">
+                            Changjun He
+                    </span>,
+                    <span class="author-block" style="color: #06a7e7;">
+                      Weiping Chen<sup><span style="color: black;">*</span></sup>
+                    </span>,
+                    <span class="author-block" style="color: #06a7e7;">
+                            Mingjiang Wang
+                    </span>
+                  </div>
+
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block">Harbin Institute of Technology, Harbin Institute of Technology (Shenzhen)<br>2025 IEEE International Conference on Acoustics, Speech, and Signal Processing</span>
+                    <span class="eql-cntrb"><small><br><sup>*</sup>Corresponding Author</small></span>
+                  </div>
+
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            In applications such as virtual reality and augmented reality, binaural audio provides listeners with a more immersive experience. To synthesize binaural audio with enhanced spatial localization, especially in scenarios involving moving sound sources, accurate phase estimation is crucial. However, existing deep learning methods have yet to achieve satisfactory results in this area. To address this issue, this paper introduces a Dual Position Attention Time-Frequency Network (DPATFNet). Specifically, our approach targets the interaural differences and Doppler effects induced by sound source movement, guiding the synthesis process from monaural to binaural audio through strong positional conditions in the time-frequency domain. The network employs a Dual Position Attention Block (DPAB) to effectively focus on sound source movement and improve phase estimation performance. The proposed DPATFNet demonstrates a strong capability for synthesizing accurate binaural audio, with experimental results on the Binaural Speech dataset showing that DPATFNet achieves state-of-the-art performance in phase metrics (Phase-L2: 0.717, IPD-L2: 1.020, Wave-L2: 0.148, Amplitude-L2: 0.037).
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+
+<!-- Audio Grid Section -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h1 class="title">Samples from Binaural Speech Datasets</h1>
+      <table>
+        <!-- Repeat the row structure for the rest of the 35 audio files -->
+
+        <tr>
+          <th style="text-align: center; padding-right: 20px;"></th> <!-- 描述列 -->
+          <th style="text-align: center;">CP</th>
+          <th style="text-align: center;">Octuple<sup>*</sup></th>
+          <th style="text-align: center;">CCP</th>
+          <th style="text-align: center;">CCP&IWA</th>
+          <th style="text-align: center;">Groundtruth</th>
+          <!-- 继续添加其他表头描述 -->
+        </tr>
+        
+        <tr>
+          <td style="vertical-align: middle; text-align: center; padding-right: 10px;"><strong>demo1</strong></td> <!-- 描述列 -->
+          <td><audio controls style="width: 250px; margin-top: 10px;"><source src="static/audios/c875/875_tgt_5.mp3" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 250px; margin-top: 10px;"><source src="static/audios/c875/875_tgt_6.mp3" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 250px; margin-top: 10px;"><source src="static/audios/c875/875_tgt_1.mp3" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 250px; margin-top: 10px;"><source src="static/audios/c875/875_tgt_4.mp3" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 250px; margin-top: 10px;"><source src="static/audios/c875/875_tgt_o.mp3" type="audio/wav"></audio></td>
+        </tr>
+
+        <tr>
+          <td style="vertical-align: middle; text-align: center; padding-right: 10px;"><strong>demo2</strong></td> <!-- 描述列 -->
+          <td><audio controls style="width: 250px; margin-top: 10px;"><source src="static/audios/c878/878_tgt_5.mp3" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 250px; margin-top: 10px;"><source src="static/audios/c878/878_tgt_6.mp3" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 250px; margin-top: 10px;"><source src="static/audios/c878/878_tgt_1.mp3" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 250px; margin-top: 10px;"><source src="static/audios/c878/878_tgt_4.mp3" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 250px; margin-top: 10px;"><source src="static/audios/c878/878_tgt_o.mp3" type="audio/wav"></audio></td>
+        </tr>
+
+        <tr>
+          <td style="vertical-align: middle; text-align: center; padding-right: 10px;"><strong>demo3</strong></td> <!-- 描述列 -->
+          <td><audio controls style="width: 250px; margin-top: 10px;"><source src="static/audios/c879/879_tgt_5.mp3" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 250px; margin-top: 10px;"><source src="static/audios/c879/879_tgt_6.mp3" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 250px; margin-top: 10px;"><source src="static/audios/c879/879_tgt_1.mp3" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 250px; margin-top: 10px;"><source src="static/audios/c879/879_tgt_4.mp3" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 250px; margin-top: 10px;"><source src="static/audios/c879/879_tgt_o.mp3" type="audio/wav"></audio></td>
+        </tr>
+
+        <tr>
+          <td style="vertical-align: middle; text-align: center; padding-right: 10px;"><strong>demo4</strong></td> <!-- 描述列 -->
+          <td><audio controls style="width: 250px; margin-top: 10px;"><source src="static/audios/c883/883_tgt_5.mp3" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 250px; margin-top: 10px;"><source src="static/audios/c883/883_tgt_6.mp3" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 250px; margin-top: 10px;"><source src="static/audios/c883/883_tgt_1.mp3" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 250px; margin-top: 10px;"><source src="static/audios/c883/883_tgt_4.mp3" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 250px; margin-top: 10px;"><source src="static/audios/c883/883_tgt_o.mp3" type="audio/wav"></audio></td>
+        </tr>
+
+        <tr>
+          <td style="vertical-align: middle; text-align: center; padding-right: 10px;"><strong>demo5</strong></td> <!-- 描述列 -->
+          <td><audio controls style="width: 250px; margin-top: 10px;"><source src="static/audios/c887/887_tgt_5.mp3" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 250px; margin-top: 10px;"><source src="static/audios/c887/887_tgt_6.mp3" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 250px; margin-top: 10px;"><source src="static/audios/c887/887_tgt_1.mp3" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 250px; margin-top: 10px;"><source src="static/audios/c887/887_tgt_4.mp3" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 250px; margin-top: 10px;"><source src="static/audios/c887/887_tgt_o.mp3" type="audio/wav"></audio></td>
+        </tr>
+
+        <tr>
+          <td style="vertical-align: middle; text-align: center; padding-right: 10px;"><strong>demo6</strong></td> <!-- 描述列 -->
+          <td><audio controls style="width: 250px; margin-top: 10px;"><source src="static/audios/c888/888_tgt_5.mp3" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 250px; margin-top: 10px;"><source src="static/audios/c888/888_tgt_6.mp3" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 250px; margin-top: 10px;"><source src="static/audios/c888/888_tgt_1.mp3" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 250px; margin-top: 10px;"><source src="static/audios/c888/888_tgt_4.mp3" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 250px; margin-top: 10px;"><source src="static/audios/c888/888_tgt_o.mp3" type="audio/wav"></audio></td>
+        </tr>
+
+        <tr>
+          <td style="vertical-align: middle; text-align: center; padding-right: 10px;"><strong>demo7</strong></td> <!-- 描述列 -->
+          <td><audio controls style="width: 250px; margin-top: 10px;"><source src="static/audios/c896/896_tgt_5.mp3" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 250px; margin-top: 10px;"><source src="static/audios/c896/896_tgt_6.mp3" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 250px; margin-top: 10px;"><source src="static/audios/c896/896_tgt_1.mp3" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 250px; margin-top: 10px;"><source src="static/audios/c896/896_tgt_4.mp3" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 250px; margin-top: 10px;"><source src="static/audios/c896/896_tgt_o.mp3" type="audio/wav"></audio></td>
+        </tr>
+
+        <tr>
+          <td style="vertical-align: middle; text-align: center; padding-right: 10px;"><strong>demo8</strong></td> <!-- 描述列 -->
+          <td><audio controls style="width: 250px; margin-top: 10px;"><source src="static/audios/c898/898_tgt_5.mp3" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 250px; margin-top: 10px;"><source src="static/audios/c898/898_tgt_6.mp3" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 250px; margin-top: 10px;"><source src="static/audios/c898/898_tgt_1.mp3" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 250px; margin-top: 10px;"><source src="static/audios/c898/898_tgt_4.mp3" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 250px; margin-top: 10px;"><source src="static/audios/c898/898_tgt_o.mp3" type="audio/wav"></audio></td>
+        </tr>
+
+        <tr>
+          <td style="vertical-align: middle; text-align: center; padding-right: 10px;"><strong>demo9</strong></td> <!-- 描述列 -->
+          <td><audio controls style="width: 250px; margin-top: 10px;"><source src="static/audios/c901/901_tgt_5.mp3" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 250px; margin-top: 10px;"><source src="static/audios/c901/901_tgt_6.mp3" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 250px; margin-top: 10px;"><source src="static/audios/c901/901_tgt_1.mp3" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 250px; margin-top: 10px;"><source src="static/audios/c901/901_tgt_4.mp3" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 250px; margin-top: 10px;"><source src="static/audios/c901/901_tgt_o.mp3" type="audio/wav"></audio></td>
+        </tr>
+
+        <tr>
+          <td style="vertical-align: middle; text-align: center; padding-right: 10px;"><strong>demo10</strong></td> <!-- 描述列 -->
+          <td><audio controls style="width: 250px; margin-top: 10px;"><source src="static/audios/c908/908_tgt_5.mp3" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 250px; margin-top: 10px;"><source src="static/audios/c908/908_tgt_6.mp3" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 250px; margin-top: 10px;"><source src="static/audios/c908/908_tgt_1.mp3" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 250px; margin-top: 10px;"><source src="static/audios/c908/908_tgt_4.mp3" type="audio/wav"></audio></td>
+          <td><audio controls style="width: 250px; margin-top: 10px;"><source src="static/audios/c908/908_tgt_o.mp3" type="audio/wav"></audio></td>
+        </tr>
+
+        <!-- Repeat for other rows as needed -->
+      </table>
+
+    </div>
+  </div>
+</section>
+<!-- End Audio Grid Section -->
+
+
+
+<!--BibTex citation -->
+  <!-- <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>BibTex Code Here</code></pre>
+    </div>
+</section> -->
+<!--End BibTex citation -->
+
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            You are free to borrow the of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        var audios = document.querySelectorAll('audio');
+  
+        audios.forEach(function(audio) {
+          audio.addEventListener('play', function() {
+            audios.forEach(function(otherAudio) {
+              if (otherAudio !== audio) {
+                otherAudio.pause();
+                otherAudio.currentTime = 0; // 可选：重置进度条
+              }
+            });
+          });
+        });
+      });
+    </script>
+    
+  </body>
+  </html>
