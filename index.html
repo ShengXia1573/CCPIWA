@@ -100,7 +100,15 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            In applications such as virtual reality and augmented reality, binaural audio provides listeners with a more immersive experience. To synthesize binaural audio with enhanced spatial localization, especially in scenarios involving moving sound sources, accurate phase estimation is crucial. However, existing deep learning methods have yet to achieve satisfactory results in this area. To address this issue, this paper introduces a Dual Position Attention Time-Frequency Network (DPATFNet). Specifically, our approach targets the interaural differences and Doppler effects induced by sound source movement, guiding the synthesis process from monaural to binaural audio through strong positional conditions in the time-frequency domain. The network employs a Dual Position Attention Block (DPAB) to effectively focus on sound source movement and improve phase estimation performance. The proposed DPATFNet demonstrates a strong capability for synthesizing accurate binaural audio, with experimental results on the Binaural Speech dataset showing that DPATFNet achieves state-of-the-art performance in phase metrics (Phase-L2: 0.717, IPD-L2: 1.020, Wave-L2: 0.148, Amplitude-L2: 0.037).
+            Symbolic music generation involves using symbolic encoding to represent music pieces as token sequences and using neural sequence models to create music by generating sequences of tokens. 
+            Symbolic encodings are primarily categorized into two types: independent word encoding and compound word encoding. 
+            Independent word encoding treats each token equally, where the model predicts one token at each timestep. 
+            Compound word encoding groups associated tokens and combines them into a super token, and places them in one timestep, where the model predicts multiple different tokens at each timestep. 
+            Previous works related to compound word encoding only use compressed representation constructed from super tokens for model learning without considering the independent tokens that consist of super tokens. 
+            To enable models to capture the dependencies between independent tokens in super tokens when using compound word encoding, we propose compressive compound word encoding and independent word attention. 
+            The compressive compound word encoding reduces the number of ignore tokens in super tokens and timesteps required to encode one music piece. 
+            The independent word attention learns how the independent tokens in super tokens are organized. 
+            Experimental results demonstrate that compressive compound word encoding and independent word attention can improve the quality of generated music.
           </p>
         </div>
       </div>
